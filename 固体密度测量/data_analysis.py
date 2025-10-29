@@ -1,9 +1,6 @@
 import math
-from decimal import Decimal, ROUND_HALF_UP
 from measured_data import *
-import statistics as stats
 from statistics import mean, stdev, variance, pstdev
-import numpy as np
  
 # 处理零点误差
 d_1 = [x - x_0 for x in x_1]
