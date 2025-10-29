@@ -10,7 +10,7 @@ You can utilize Python scripts provided in the data_analysis.py file for data pr
 
 1. Clone the repository to your local machine using:
    ```
-   git clone <repository-url>
+   git clone https://github.com/wangzh12023/shanghaitech-general-physics-I-lab.git
    ```
 3. Open the `data_analysis.py` file in each lab directory in your preferred Python environment.
 4. Replace the data in `measured_data.py` with your own experimental data.
