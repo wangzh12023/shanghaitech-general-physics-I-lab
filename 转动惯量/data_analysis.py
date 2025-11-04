@@ -167,6 +167,8 @@ J3 = J2 - J1
 J4 =  m_exp*R_exp*(g - R_exp*beta_6) / (beta_6 - beta_5)
 
 J5 = J4-J1
+
+J = 0.5 * mean(M_1) * 1e-3 * (D_1_m/2)**2 + 0.5 * mean(M_2) *1e-3 * (D_2_m/2)**2 + (mean(M_1)+mean(M_2))*1e-3 * (d*1e-3)**2
 # 圆环理论值
 R_out, R_in = D_o_m/2, D_i_m/2
 J_ring_theory = 0.5*M_c_kg*(R_out**2 + R_in**2)
@@ -188,3 +190,11 @@ print(f"\n圆环理论值: {J_ring_theory:.6e} kg·m²")
 print(f"圆环相对误差: {E_ring:.2f}%")
 # print(f"\n双圆柱理论值: {J_cyl_theory:.6e} kg·m²")
 # print(f"双圆柱相对误差: {E_cyl:.2f}%")
+
+print("J=", J)
+print("J5=", J5)
+print("J4=", J4)
+print("相对误差=", abs(J5 - J)/J * 100, "%")
+
+print((mean(M_1)+mean(M_2))*1e-3 * (d*1e-3)**2)
+print(0.5 * mean(M_1) * 1e-3 * (D_1_m/2)**2 + 0.5 * mean(M_2) *1e-3 * (D_2_m/2)**2)
