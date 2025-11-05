@@ -196,5 +196,5 @@ print("J5=", J5)
 print("J4=", J4)
 print("相对误差=", abs(J5 - J)/J * 100, "%")
 
-print((mean(M_1)+mean(M_2))*1e-3 * (d*1e-3)**2)
-print(0.5 * mean(M_1) * 1e-3 * (D_1_m/2)**2 + 0.5 * mean(M_2) *1e-3 * (D_2_m/2)**2)
+# print((mean(M_1)+mean(M_2))*1e-3 * (d*1e-3)**2)
+# print(0.5 * mean(M_1) * 1e-3 * (D_1_m/2)**2 + 0.5 * mean(M_2) *1e-3 * (D_2_m/2)**2)
