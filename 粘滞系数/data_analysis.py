@@ -117,7 +117,15 @@ print(f" v_0_29 = {v_0_29} m/s")
 print(f" v_0_31 = {v_0_31} m/s")
 print(f" v_0_32 = {v_0_32} m/s")
 
-
+v_0_l = [v_0_23, v_0_25, v_0_27, v_0_29, v_0_31, v_0_32]
 # 计算eta
 d = mean_d 
-eta_1 = (((rho - rho_0) * 9.7940 * d**2) / (18 * v_0 * (1 + 2.4 * d / D))) - ((3/16) * v_0 * d * rho_0)
+eta_1_l = []
+print(v_0_23 * 1e-3 * d * 1e-3 * rho_0)
+for v_0 in v_0_l:
+    eta_1 = (((rho - rho_0) * 9.7940 * d**2) / (18 * v_0 * (1 + 2.4 * d / D))) - ((3/16) * v_0 * d * rho_0) 
+    eta_1 = eta_1 * 1e-4
+    eta_1_l.append(eta_1)
+    print(f"Index ; {v_0_l.index(v_0)}时，eta = {eta_1} Pa·s")
+    
+

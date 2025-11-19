@@ -1,7 +1,9 @@
 '''You can fill your measured data here, so in the file `data_analysis.py`
     you can directly import the data from this file.'''
   
-  
+rho_0 = 0.95 * 1e3  # kg/m3 纯水在20°C时的密度
+rho = 7.8 * 1e3
+D = 2.0*1e-2
 x_0 = 0.067 #mm 螺旋测微仪零差
 d = [1.067, 1.064,1.065,1.067,1.067]
 
